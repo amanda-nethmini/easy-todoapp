@@ -33,7 +33,6 @@ const Home = ({ setOpenLoginModal }) => {
         }
       }
     } catch (err) {
-      console.log(err);
       message.error("Error fetching todos");
     } finally {
       setLoading(false);

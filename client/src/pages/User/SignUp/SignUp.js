@@ -117,8 +117,13 @@ const Signup = ({
         setOpenLoginModal(true);
       }
     } catch (err) {
-      console.log(err);
-      message.error("Signup failed. Please try again.");
+      if (err.response.data.error === "Email Already Exists") {
+        message.error(
+          "Email Already Exists. Please Login or Create a New Account With Another Email Address."
+        );
+      } else {
+        message.error("Signup failed. Please try again.");
+      }
     } finally {
       setLoading(false);
     }

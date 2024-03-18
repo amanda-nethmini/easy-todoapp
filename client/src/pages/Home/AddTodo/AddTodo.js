@@ -13,7 +13,6 @@ const AddTodo = ({ openAddTodoModal, setOpenAddTodoModal, getTodos }) => {
   const user = JSON.parse(localStorage.getItem("user"));
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     if (e.target.name === "title") {
       if (e.target.value === "") {
         setTitleError("Please enter your Todo Title!");
@@ -56,7 +55,6 @@ const AddTodo = ({ openAddTodoModal, setOpenAddTodoModal, getTodos }) => {
         });
       }
     } catch (err) {
-      console.log(err);
       message.error("Something went wrong, please try again!");
     } finally {
       setloading(false);
@@ -64,7 +62,6 @@ const AddTodo = ({ openAddTodoModal, setOpenAddTodoModal, getTodos }) => {
   };
 
   const handleCancel = () => {
-    console.log("Clicked cancel button");
     setOpenAddTodoModal(false);
   };
 

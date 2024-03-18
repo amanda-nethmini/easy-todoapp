@@ -51,7 +51,6 @@ const EditTodo = ({
         getTodos();
       }
     } catch (error) {
-      console.log(error);
       message.error("Error updating todo");
     } finally {
       setLoading(false);

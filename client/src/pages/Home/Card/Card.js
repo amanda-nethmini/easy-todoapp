@@ -20,7 +20,6 @@ const Card = ({ todo, getTodos }) => {
         todoId: todo._id,
         completed: completedStatus,
       });
-      console.log(response.data);
       message.success("Todo updated!");
     } catch (error) {
       message.error("Error updating todo completion");

@@ -22,7 +22,6 @@ const DeleteTodo = ({
         getTodos();
       }
     } catch (error) {
-      console.log(error);
       message.error("Error deleting todo");
     } finally {
       setLoading(false);

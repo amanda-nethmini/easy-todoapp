@@ -11,7 +11,6 @@ const Login = ({ openLoginModal, setOpenLoginModal, setopenRegisterModal }) => {
   const [passwordError, setPasswordError] = useState("");
 
   const handleChange = (e) => {
-    console.log(e.target.value);
     if (e.target.name === "email") {
       if (e.target.value === "") {
         setEmailError("Please enter your email!");
@@ -33,7 +32,6 @@ const Login = ({ openLoginModal, setOpenLoginModal, setopenRegisterModal }) => {
   };
 
   const onFinish = async () => {
-    console.log(formData.email, formData.password);
 
     try {
       setloading(true);
@@ -68,7 +66,6 @@ const Login = ({ openLoginModal, setOpenLoginModal, setopenRegisterModal }) => {
         window.location.reload();
       }
     } catch (err) {
-      console.log(err);
       message.error("Email or password is incorrect!");
     } finally {
       setloading(false);
@@ -76,7 +73,6 @@ const Login = ({ openLoginModal, setOpenLoginModal, setopenRegisterModal }) => {
   };
 
   const handleCancel = () => {
-    console.log("Clicked cancel button");
     setOpenLoginModal(false);
   };
   return (
