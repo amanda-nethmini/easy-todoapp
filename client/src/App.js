@@ -10,7 +10,7 @@ function App() {
   const [openLoginModal, setOpenLoginModal] = useState(false);
   const [openRegisterModal, setopenRegisterModal] = useState(false);
 
-  axios.defaults.baseURL = "http://localhost:5000/";
+  axios.defaults.baseURL = "https://easy-todoapp.onrender.com/";
 
   return (
     <div>
