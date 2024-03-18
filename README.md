@@ -1,0 +1,3 @@
+# Easy ToDo
+
+Easy Todo is a simple todo application with user centric todo saving. The user has the ability to sign up to the system with their email and password. Then they have to sign in to the system. So in this app the user can create a todo with the title and description. Additionally the user can set a priority and the background color of the todo card. Then they can save the todo. Then the user can see the todos that the user created. Left side border will have a color out of green, yellow, red according to the priority (Low, Medium, High). The selected background color will also appear in the todo card. Then there is a checkbox to complete todo. Also the user has the ability to edit the todo details and delete the todo.
